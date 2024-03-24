@@ -37,5 +37,6 @@ def yearly(station, year):
     result = df[df["    DATE"].str.startswith(str(year))].to_dict(orient="records")
     return result
 
+
 if __name__ == "__main__":
     app.run(debug=True)
